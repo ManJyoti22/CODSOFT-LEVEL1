@@ -46,7 +46,7 @@
                 </div>
             </div>
             <div class="header-right">
-                <img src="pic22.jpeg" alt="">
+                <img src="profilepic.jpg" alt="MY Profile Photo" style="max-width:600px; border-radius:16px; box-shadow:0 4px 18px rgba(0,0,0,0.13);">
             </div>
     </header>
 
@@ -218,6 +218,19 @@
 
     </footer>
     <script src="script.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var profilePic = document.querySelector('.header-right img[alt="MY Profile Photo"]');
+        if(profilePic) {
+          profilePic.addEventListener('click', function() {
+            profilePic.classList.add('blink');
+            setTimeout(function(){
+              profilePic.classList.remove('blink');
+            }, 350);
+          });
+        }
+      });
+    </script>
 
 </body>
 </html>

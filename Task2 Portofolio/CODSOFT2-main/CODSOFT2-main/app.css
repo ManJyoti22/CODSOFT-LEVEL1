@@ -401,3 +401,14 @@ footer{
     background: var(--color-dark);
     box-shadow: 0 0.1rem rgba(0,0,0,0,7);
 }
+
+/* Profile pic shadow and blink effect */
+.header-right img[alt="MY Profile Photo"] {
+  box-shadow: 0 0 32px 8px rgba(255, 255, 0, 0.18), 0 4px 18px rgba(0,0,0,0.13);
+  transition: box-shadow 0.2s, filter 0.2s;
+  cursor: pointer;
+}
+.header-right img[alt="MY Profile Photo"].blink {
+  box-shadow: 0 0 48px 16px rgba(255, 255, 0, 0.45), 0 4px 18px rgba(0,0,0,0.13);
+  filter: brightness(1.2);
+}
