@@ -1,2 +1,0 @@
-# CODSOFT2
-portfolio 
